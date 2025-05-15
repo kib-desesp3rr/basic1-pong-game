@@ -127,7 +127,7 @@ function update() {
 
 // Atualiza o placar
 function updateScore() {
-    scoreDisplay.textContent = `Player: ${player.score} | AI: ${ai.score}`;
+    scoreDisplay.textContent = `Jogador: ${player.score} | Oponente: ${ai.score}`;
 }
 
 // Desenhar o jogo
@@ -181,14 +181,14 @@ function draw() {
     // Se estiver pausado, mostrar texto
     if (paused) {
         ctx.fillStyle = "white";
-        ctx.font = "30px Arial";
+        ctx.font = "30px Britannic Bold";
         ctx.textAlign = "center";
         ctx.fillText("PAUSADO", canvas.width / 2, canvas.height / 2);
     }
 
     if (!gameStarted && !paused) {
         ctx.fillStyle = "white";
-        ctx.font = "24px Arial";
+        ctx.font = "24px Britannic Bold";
         ctx.textAlign = "center";
         ctx.fillText("Pressione ESPAÇO para começar", canvas.width / 2, canvas.height / 2 + 40);
     }

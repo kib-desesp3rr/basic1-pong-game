@@ -9,6 +9,7 @@
     <h2>Desenvolvido com a API Canvas</h2>
     <h3>Em casos de bugs, reinicie o jogo abaixo.</h3>
     <button onclick="restartGame()">Restart</button>
+    <link rel="stylesheet" href="jogo.css">
     <style>
         canvas {
             border: 2px solid white;
@@ -27,12 +28,6 @@
             margin: 0;
             overflow: hidden;
         }
-        #score {
-            color: white;
-            font-family: Arial, sans-serif;
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
         h1 {
             text-align: center;
             font-family: 'Press Start 2P';
@@ -48,10 +43,24 @@
             font-family: 'Press Start 2P';
             color: aqua;
         }
+        #score {
+            font-family: 'Press Start 2P';
+            color: aqua;
+            font-size: 16px;
+        }
+        button {
+            font-family: 'Press Start 2P';
+            color: aqua;
+            background-color: #333;
+            border: 2px solid aqua;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
-    <div id="score">Player: 0 | AI: 0</div>
+    <div id="score">Jogador: 0 | Oponente: 0</div>
     <canvas id="meucanvas" width="700" height="600"></canvas>
     <script src="script.js"></script>
 </body>
